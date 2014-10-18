@@ -1,17 +1,16 @@
-package	is.ru.Stringcalculator;
+package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CalculatorTest {
 
-	public	static void main(String args[]){
-		org.junit.runner.JunitCore.main("is.ru.CalculatorTest")
-
-	}
+	public static void main(String args[]) {
+      org.junit.runner.JUnitCore.main("is.ru.Stringcalculator.Calculator");
+    }
 
 	@Test
-	public void test() {
+	public void testEmptyString() {
 		assertEquals(0, Calculator.add(""));
 	}
 }
